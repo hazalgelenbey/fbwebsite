@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YAŞA FENERBAHÇE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .top-banner img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .logo-bar {
+            width: 100%;
+            height: 150px;
+            background-color: #111ac8;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-bar img {
+            max-height: 130px;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-left: 40px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #040404;
+        }
+
+        .light-blue-bar {
+            height: 100px;
+            background-color: #190aa5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px;
+        }
+
+        .light-blue-bar button {
+            background-color: #fdd805;
+            color: #040505;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+            margin-left: auto;
+        }
+
+        .light-blue-bar button:hover {
+            background-color: #f1f0ea;
+        }
+
+        .two-column-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px;
+            font-size: 20px;
+        }
+
+        .left-column {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right-column img {
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) { 
+            .nav-menu {
+                flex-direction: column;
+                gap: 10px;
+                margin-left: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            .logo-bar {
+                height: auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .logo-bar img {
+                max-width: 60%; 
+                height: auto;
+            }
+
+            .light-blue-bar {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .two-column-section {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .left-column, .right-column {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-banner">
+        <img src="image/banner.png" alt="Fenerbahçe Banner">
+    </div>
+    <div class="logo-bar">
+        <img src="image/logo.png" alt="Fenerbahçe Logo">
+        <nav class="nav-menu">
+            <a href="https://www.fenerbahce.org/news" target="_blank">HABERLER</a>
+            <a href="https://www.fenerbahce.org/club/fenerbahcesk" target="_blank">KULÜP</a>
+            <a href="https://fenerium.com/" target="_blank">FENERIUM</a>
+            <a href="https://www.fenerbahce.org/fbtv/" target="_blank">FB TV</a>
+            <a href="https://www.fenerbahce.org/kulup/iletisim" target="_blank">İLETİŞİM</a>
+        </nav>
+    </div>
+    <div class="light-blue-bar">
+      <button>PASSO KART</button>
+    </div>
+    <div class="two-column-section">
+        <div class="left-column">
+            <p>Spor ve yaşama dair herşey Passolig Fenerbahçe Banka Kartında!
+
+                Türkiye’de stadyumlara girişin anahtarı, Passolig Fenerbahçe Banka Kartı ile her harcamanızla kulübünüze maddi katkı sağlarsınız. Passolig Fenerbahçe Banka Kartına hemen başvurarak, kolayca para yükleyerek maç bileti veya kombine alabilir, yurt içi ve yurt dışı tüm alışverişlerinde kullanabilir, yüzlerce markaya ait Passolig'e özel kampanyalardan yararlanabilirsiniz.<br><br>
+                Passolig Fenerbahçe Banka Kartıyla Maç Bileti Alabilirsin!
+                Takımına özel banka kartın ile Ülker Stadyumu Fenerbahçe Şükrü Saraçoğlu Spor Kompleksi’nde ve diğer stadyumlarda oynadığı Trendyol Süper Lig maçlarına, Ziraat Türkiye Kupası karşılaşmalarına, Avrupa Kupaları ve diğer özel karşılaşmalarına maç bileti alabilir, kartın ile rahatça stadyuma girebilirsin.
+        </div>
+        <div class="right-column">
+            <img src="image/passo.jpg" alt="Fenerbahçe Stadyumu">
+            <h2>Fenerbahçe Passo Kart </h2>
+        </div>
+    </div>
+</body>
+</html>
